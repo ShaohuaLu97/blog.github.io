@@ -1,0 +1,76 @@
+body {
+    background-color: aliceblue;
+}
+
+table {
+    width: 100%;
+    border:1px none black;
+    border-collapse: collapse;
+}
+
+td.front {
+    width: 80%;
+    text-align: left;
+}
+
+td.back {
+    text-align: right;
+}
+
+img {
+    display: block;
+    margin-top: 10px;
+    margin-right: 10px;
+    height: 380px;
+    width: auto;
+    float: left;
+}
+
+.list li {
+    list-style-type: square;
+}
+
+.navB ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+  
+
+.navB li {
+    float: left;
+}
+  
+.navB li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navB li a:hover {
+    background-color: #111;
+}
+
+i:hover {
+    background-color: #111;
+    transform: scale(1.5);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: grey;
+    min-width: 115px;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: green !important;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
