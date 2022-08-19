@@ -1,0 +1,65 @@
+body {
+  background-color: cornflowerblue;
+}
+  
+h1 {
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#display {
+  color: black;
+  background-color: whitesmoke;
+  display: flex;
+  width: 180px;
+  font-size: 28px;
+  justify-content: flex-end;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.calc {
+  width: 250px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: silver;
+  padding: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.btn {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.15s;
+  background-color: white;
+}
+.btn:hover {
+  transition: 0.15s;
+  box-shadow: 0px 0px 2px black;
+}
+#add, #subtract, #multiply, #divide  {
+  color: red;
+  background-color: paleturquoise;
+}
+#clear, #equal {
+  color: white;
+  background-color: orange;
+}

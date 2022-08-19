@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<style>
+.flabel{
+    color:blue;
+}
+.flabelInput{
+    color:grey;
+}
+h1{
+    background-color: cornflowerblue;
+}
+form{
+    background-color: bisque;
+}
+</style>
+
+<body>
+
+<h1>Data Collecting Form</h1>
+
+<form action="/action_page.php">
+
+  <label class="flabel" for="fname">First name:</label><br>
+  <input class="flabelInput" type="text" id="fname" name="fname" placeholder="First Name"><br>
+
+  <label class="flabel" for="lname">Last name:</label><br>
+  <input class="flabelInput" type="text" id="lname" name="lname" placeholder="Last Name"><br>
+
+  <label class="flabel" for="age">Age:</label><br>
+  <input class="flabelInput" type="text" id="age" name="age" placeholder="Age"><br>
+
+  <p>Please select your Gender:</p>
+    <input type="radio" id="male" name="gender" value="MALE">
+    <label for="male">MALE</label><br>
+    <input type="radio" id="female" name="gender" value="FEMALE">
+    <label for="female">FEMALE</label><br> 
+
+
+  <label class="flabel" for="address">Address:</label><br>
+  <input class="flabelInput" type="text" id="address" name="address" placeholder="Home Address"><br><br>
+  <input type="submit" value="Submit">
+  <input type="reset" value="Reset">
+</form> 
+
+
+</body>
+</html>

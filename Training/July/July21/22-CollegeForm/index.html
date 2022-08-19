@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<style>
+body, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color:rgb(244, 72, 72);
+}
+
+h3 {
+    text-align: center;
+}
+
+iframe {
+    display: block;
+    width: 1280px;
+    height: 720px;
+    margin: 0 auto;
+    background-color: #777;
+}
+
+input, select {
+  width: 45%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input.radiocheckbox {
+    width: auto;
+}
+
+input[type=submit],[type=reset] {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover,[type=reset]:hover {
+  background-color: red;
+}
+
+.flabel {
+    font-weight: bold;
+}
+
+div.head {
+    background-image: url(./neu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.form {
+    padding: 5px;
+    background-color: rgb(244, 252, 252);
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: auto;
+    overflow: hidden;
+    background-color: black;
+}
+
+ul.topnav li {
+    float: left;
+}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: rgb(243, 161, 161);}
+
+ul.topnav li.right {float: right; margin: 10px;}
+
+@media screen and (max-width: 600px) {
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+}
+
+</style>
+
+<body>
+
+<div>
+    <nav>
+        <ul class="topnav">
+            <li><a href="#" style="color: red; font-weight: bolder;">Northeastern<br>University</a></li>
+            <li class="right"><a href="#">ACADEMIC</a></li>
+            <li class="right"><a href="#">ADMISSION</a></li>
+            <li class="right"><a href="#">CONTACT US</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="head">
+    <h1>Northeastern Univeristy Engineering School</h1>
+    <h3>About US</h3>
+    <iframe src="https://www.youtube.com/embed/EzQ_6W-s6jk?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div class="form">
+    <h3>Engineering School Application Form</h3>
+    <form action="#" method="post" target="_blank" autocomplete="on">
+        <label class="flabel" for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Email" required><br>
+
+        <label class="flabel" for="fname">First name:</label><br>
+        <input type="text" id="fname" name="firstname" placeholder="First Name" required><br>
+
+        <label class="flabel" for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lastname" placeholder="Last Name" required><br>
+
+        <label class="flabel" for="age">Age:</label><br>
+        <input type="number" id="age" name="age" placeholder="Age" required><br>
+
+        <label class="flabel" for="birthday">Birthday (date and time):</label><br>
+        <input type="datetime-local" id="birthday" name="birthday" required><br>
+
+        <label class="flabel" for="phone">Enter your phone number:</label><br>
+        <input type="tel" id="phone" name="phonenumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxxx" required><br>
+
+        <label class="flabel" for="coloreye">Your Favourite Color:</label><br>
+        <input type="color" id="color" name="eyecolor" style="width: 5%;" required><br>
+
+        <label class="flabel" for="quantity">Family Member:</label><br>
+        <input type="number" id="quantity" name="fmquantity" min="1" max="25" placeholder="0" required><br>
+
+        <p class="flabel">Please select your Gender:</p>
+        <input class="radiocheckbox" type="radio" id="male" name="gender" value="MALE">
+        <label for="male">MALE</label><br>
+        <input class="radiocheckbox" type="radio" id="female" name="gender" value="FEMALE">
+        <label for="female">FEMALE</label><br><br>
+
+        <label class="flabel" for="address">Enter your Address:</label><br>
+        <label for="address">Street:</label><br>
+        <input type="text" name="address" placeholder="Home Address" style="width: 50%;" required><br>
+        <label for="address">Apartment, suite, etc:</label><br>
+        <input type="text" name="address" placeholder="Home Address" style="width: 50%;" required><br>
+        <label for="address">City:</label><br>
+        <input type="text" name="address" placeholder="Home Address" style="width: 50%;" required><br>
+        <label for="address">State/province:</label><br>
+        <input type="text" name="address" placeholder="Home Address" style="width: 50%;" required><br>
+        <label for="address">Country</label><br>
+        <input type="text" name="address" placeholder="Home Address" style="width: 50%;" required><br>
+        <label for="address">ZIP/Postal code:</label><br>
+        <input type="text" name="address" placeholder="Home Address" style="width: 50%;" required><br>
+        
+        <p class="flabel">Please select the Major you want to apply:</p>
+        <input class="radiocheckbox" type="checkbox" id="major" name="major">
+        <label for="major">Computer Science</label><br>
+        <input class="radiocheckbox" type="checkbox" id="major" name="major">
+        <label for="major">Information System</label><br>
+        <input class="radiocheckbox" type="checkbox" id="major" name="major">
+        <label for="major">Business Analysis</label><br>
+        <input class="radiocheckbox" type="checkbox" id="major" name="major">
+        <label for="major">Data Science</label><br><br>
+
+        <label class="flabel" for="enrollment">Enrollment date:</label><br>
+        <input type="date" id="enrollment" name="enrollment" min="2022-09-01" max="2024-09-01" required><br>
+
+        <label class="flabel" for="myfile">Upload your Cover Letter:</label><br>
+        <input type="file" id="myfile" name="myfile" required><br>
+
+        <label class="flabel" for="myfile">Upload your Recommendation Letter:</label><br>
+        <input type="file" id="myfile" name="myfile" required><br>
+
+        <label class="flabel" for="linkedin">Upload your LinkedIn Page:</label><br>
+        <input type="url" id="linkedin" name="linkedin" placeholder="LinkedIn url"><br>
+
+        <label class="flabel" for="pwd">Enter a password create an account:</label><br>
+        <input type="password" id="pws" name="pws" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" style="width:60%;" required><br>
+
+        <label class="flabel" for="pwd">Re-enter password(confirm):</label><br>
+        <input type="password" id="pws" name="pws" placeholder="Have to match with the password above" style="width:60%;" required><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</div>
+
+</body>
+</html>

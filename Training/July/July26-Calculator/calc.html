@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./main.css">
+    <h1>Basic Calculator</h1>
+    
+</head>
+<body>
+    <form name="calc">
+        <table>
+            <tr>
+                <td>
+                    <input type="text" name="input" size="16" id="answer">
+    
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" name="seven" value="  7  " onclick="calc.input.value += '7'">
+                    <input type="button" name="eight" value="  8  " onclick="calc.input.value += '8'">
+                    <input type="button" name="nine" value="  9  " onclick="calc.input.value += '9'">
+                    <input type="button" class="operator" name="times" value="  x  " onclick="calc.input.value += ' * '">
+                    <br>
+                    <input type="button" name="four" value="  4  " onclick="calc.input.value += '4'">
+                    <input type="button" name="five" value="  5  " onclick="calc.input.value += '5'">
+                    <input type="button" name="six" value="  6  " onclick="calc.input.value += '6'">
+                    <input type="button" class="operator" name="div" value="  /  " onclick="calc.input.value += ' / '">
+                    <br>
+                    <input type="button" name="one" value="  1  " onclick="calc.input.value += '1'">
+                    <input type="button" name="two" value="  2  " onclick="calc.input.value += '2'">
+                    <input type="button" name="three" value="  3  " onclick="calc.input.value += '3'">
+                    <input type="button" class="operator" name="minus" value="  -  " onclick="calc.input.value += ' - '">
+                    <br>
+                    <input type="button" name="clear" id="clear" value="  c  " onclick="clear()">
+                    <input type="button" name="zero" value="  0  " onclick="calc.input.value += '0'">
+                    <input type="button" id="equal" value="  =  " onclick="equals()">
+                    <input type="button" class="operator" name="plus" value="  +  " onclick="calc.input.value += ' + '">
+                    <!-- <a class="button" id="equal" onclick="equals()"> = </a> -->
+                    <br>
+                </td>
+            </tr>
+        </table>
+    </form>
+        <p><img src="./whiteM.jpg" alt="Mountain" style="width:170px;height:170px;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, 
+            nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. 
+            Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. 
+            Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. 
+            Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. 
+            Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. 
+            Cras ac leo purus. Mauris quis diam velit.
+        </p>
+
+    <script>
+        function equals() {
+            calc.input.value = eval(calc.input.value);
+            var answerC = document.getElementById('answer');
+            answerC.style.color='red';
+        }
+        function clear() {
+            calc.input.value = ' ';
+            var clear = document.getElementById('clear');
+            clear.style.color='black';
+        }
+    </script>
+    </div>
+</body>
+</html>

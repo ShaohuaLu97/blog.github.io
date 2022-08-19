@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a background img with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background-image: url(./Autumn.jpg);
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 5px;
+  font-size: 40px;
+  text-align: center;
+  color: rgb(234, 230, 227);
+  background-color: transparent;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Image */
+.img {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: #ffc299;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>Follow the wind</h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Charles River Kayak</h2>
+      <h5>Having a wonderful afternoon with my family, July 1st, 2022</h5>
+      <img class="img" src="./kayak.jpg" alt="kayak">
+      <p>We decided to go because...</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+    <div class="card">
+      <h2>Barbecue at White Mountain</h2>
+      <h5>Best Date Ever, Sep 2, 2021</h5>
+      <img class="img" src="./whiteM.jpg" alt="whiteM">
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <img class="img" src="./img.jpg" alt="profile">
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <img class="img" src="./newY.jpg" alt="newY"><br><p>Long weekend in New York</p>
+      <img class="img" src="./tower.jpg" alt="tower"><br><p>Paris</p>
+      <img class="img" src="./sea.jpg" alt="sea"><br><p>Sea</p>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      LinkedIn: <a href="https://www.linkedin.com/in/shaohualu/">https://www.linkedin.com/in/shaohualu/</a>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+    <p>Author: Shaohua Lu</p>
+    Email: <a href = "mailto: lu.shaoh@northeastern.edu">lu.shaoh@northeastern.edu</a>
+</div>
+
+</body>
+</html>
