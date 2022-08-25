@@ -1,0 +1,39 @@
+body {
+    font-family: sans-serif;
+    background-color: silver;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+form {
+    background-color: steelblue;
+    border-radius: 0.3em;
+    display: inline-block;
+    margin-bottom: 0.5em;
+    padding: 1em;
+    width: 300px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+#msg {
+    margin-bottom: 1em;
+}
+
+.action-success {
+    padding: 0.5em;
+    color: #00d21e;
+    background-color: #eeeeee;
+    border-radius: 0.2em;
+}
+
+.action-failure {
+    padding: 0.5em;
+    color: #ff1408;
+    background-color: #eeeeee;
+    border-radius: 0.2em;
+}

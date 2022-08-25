@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"
+      defer
+    ></script>
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <h1>Store File in IndexedDB</h1>
+    <div id="msg"></div>
+
+    <form id="register-form">
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <label for="pub-title" class="required">Title:</label>
+            </td>
+            <td>
+              <input type="text" id="pub-title" name="pub-title" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="pub-biblioid" class="required">ID:</label>
+            </td>
+            <td>
+              <input type="text" id="pub-biblioid" name="pub-biblioid" />
+            </td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>
+              <label for="pub-file">File image:</label>
+            </td>
+            <td>
+              <input type="file" id="pub-file" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="button-pane">
+        <input type="button" id="add-button" value="Add File" />
+        <input type="reset" id="register-form-reset" />
+      </div>
+    </form>
+    <br />
+
+    <form id="delete-form">
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <label for="pub-biblioid-to-delete">ID:</label>
+            </td>
+            <td>
+              <input
+                type="text"
+                id="pub-biblioid-to-delete"
+                name="pub-biblioid-to-delete"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="button-pane">
+        <input type="button" id="delete-button" value="Delete Publication" />
+        <input
+          type="button"
+          id="clear-store-button"
+          value="Clear"
+          class="destructive"
+        />
+      </div>
+    </form>
+    <br />
+
+    <form id="search-form">
+      <div class="button-pane">
+        <input
+          type="button"
+          id="search-list-button"
+          value="Show doc"
+        />
+      </div>
+    </form>
+
+    <div>
+      <div id="pub-msg"></div>
+      <div id="pub-viewer"></div>
+      <ul id="pub-list"></ul>
+    </div>
+  </body>
+</html>

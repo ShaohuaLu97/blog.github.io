@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>Log In Form</title>
+    <link rel="stylesheet" href="./src/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      language="javascript"
+      src="./src/main.js"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <form action="" class="form" id="login">
+        <h1 class="form_title">Login</h1>
+        <div class="form_message form_message_error"></div>
+        <div class="form_input_group">
+          <input
+            type="text"
+            id="loginUsername"
+            class="form_input"
+            autofocus
+            placeholder="Username or email"
+          />
+          <div class="form_input_errormessage"></div>
+        </div>
+        <div class="form_input_group">
+          <input
+            type="password"
+            id="loginPassword"
+            class="form_input"
+            autofocus
+            placeholder="Password"
+          />
+          <div class="form_input_errormessafe"></div>
+        </div>
+        <button class="form_btn" onclick="check()">Continue</button>
+        <p class="form_text">
+          <a class="form_link" id="linkRegister" href="#"
+            >Don't have an account yet? Register here.</a
+          >
+        </p>
+      </form>
+
+      <form action="" class="form form_hidden" id="register">
+        <h1 class="form_title">Register</h1>
+        <div class="form_message form_message_error"></div>
+        <div class="form_input_group">
+          <input
+            type="text"
+            id="registerUsername"
+            class="form_input"
+            autofocus
+            placeholder="Username"
+          />
+          <div class="form_input_errormessage"></div>
+        </div>
+        <div class="form_input_group">
+          <input type="text" class="form_input" autofocus placeholder="Email" />
+          <div class="form_input_errormessage"></div>
+        </div>
+        <div class="form_input_group">
+          <input
+            type="password"
+            id="registerPassword"
+            class="form_input"
+            autofocus
+            placeholder="Password"
+          />
+          <div class="form_input_errormessafe"></div>
+        </div>
+        <div class="form_input_group">
+          <input
+            type="text"
+            class="form_input"
+            autofocus
+            placeholder="ConfirmPassword"
+          />
+          <div class="form_input_errormessage"></div>
+        </div>
+        <button class="form_btn" onclick="store()">Continue</button>
+        <p class="form_text">
+          <a class="form_link" id="linkLogin" href="#"
+            >Already have an account? Login here.</a
+          >
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
