@@ -43,19 +43,19 @@ function loadQuestion() {
     case quiz.question >= quiz.total:
       const html = `<h1>Quiz Complete</h1><div>You got ${quiz.score} out of ${quiz.total} Correct</div>`;
       const div = makeEle("div", html, "message", output);
-      const btn3 = makeEle("button", "Take the Quiz Again", "btn", div);
-      btn3.addEventListener("click", init);
-      const btn4 = makeEle("button", "Log Out", "btn", div);
-      btn4.addEventListener("click", redirect);
-      const btn6 = makeEle("button", "Check Result in Graph", "btn", div);
-      btn6.addEventListener("click", chart);
-      btn6.addEventListener("click", () => btn6.disabled = true);
+      const btn = makeEle("button", "Take the Quiz Again", "btn", div);
+      btn.addEventListener("click", init);
+      const btn2 = makeEle("button", "Log Out", "btn", div);
+      btn2.addEventListener("click", redirect);
+      const btn3 = makeEle("button", "Check Result in Graph", "btn", div);
+      btn3.addEventListener("click", chart);
+      btn3.addEventListener("click", () => btn3.disabled = true);
       break;
     case quiz.question < quiz.total:
-      const div3 = makeEle("div", "", "message", output);
+      const div2 = makeEle("div", "", "message", output);
       const val = quiz.data[quiz.question];
-      const question = makeEle("div", val.question, "question", div3);
-      const optList = makeEle("div", "", "opts", div3);
+      const question = makeEle("div", val.question, "question", div2);
+      const optList = makeEle("div", "", "opts", div2);
       val.arr.forEach((opt) => {
         // console.log(opt);
         const temp = makeEle("div", opt, "box", optList);
