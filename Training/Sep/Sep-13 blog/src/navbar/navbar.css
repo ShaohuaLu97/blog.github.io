@@ -1,0 +1,55 @@
+.navbar {
+    width: 100%;
+    height: 50px;
+    background-color: pink;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    z-index: 999;
+    font-family: 'Lato', sans-serif;
+}
+
+.topleft {
+    flex: 3;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin-left: 5px;
+}
+
+.topright {
+    flex: 9;
+    color: #666;
+}
+
+.navIcon {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #444;
+    cursor: pointer;
+}
+
+.navIcon:hover {
+    color: orangered;
+}
+
+.navlist {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navBarItem {
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.navBarItem:hover {
+    color: orangered;
+}
+

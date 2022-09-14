@@ -1,0 +1,45 @@
+.sidebar {
+    flex: 3;
+    margin: 20px;
+    padding-bottom: 30px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 4rem;
+}
+
+.sidebarItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebarTitle {
+    margin: 10px;
+    padding: 5px;
+    width: 80%;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
+
+img {
+    margin-top: 20px;
+}
+
+p {
+    padding: 50px;
+}
+
+.sidebarIcon {
+    font-size: 16px;
+    margin-left: 15px;
+    cursor: pointer;
+}
