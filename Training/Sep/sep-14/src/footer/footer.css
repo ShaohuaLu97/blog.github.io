@@ -1,0 +1,16 @@
+.footer {
+    margin-top: 50px;
+    color: orangered;
+}
+
+.footerTitle {
+    font-family: 'Lato', sans-serif;
+}
+
+.footerIcon {
+    margin-top: 20px;
+    font-size: 16px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+

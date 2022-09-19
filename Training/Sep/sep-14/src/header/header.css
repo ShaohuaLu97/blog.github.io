@@ -1,0 +1,19 @@
+.headerTitleL {
+    padding-top: 40px;
+    font-size: 100px;
+    text-decoration: aqua underline wavy;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.headerTitleS {
+    padding-top: 100px;
+    font-size: 60px;
+    text-decoration: aqua underline overline double;
+    color: coral;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-family: 'Work Sans', sans-serif;
+}
