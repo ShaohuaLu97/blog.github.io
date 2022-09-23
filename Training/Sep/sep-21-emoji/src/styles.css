@@ -1,0 +1,33 @@
+body {
+    background: orchid;
+}
+
+.App {
+    font-family: sans-serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.App .EmojiPickerReact {
+    --epr-picker-height: 500px;
+}
+
+.component {
+    margin: auto;
+    width: 20%;
+    padding: 10px;
+}
+
+.show-emoji {
+    padding-bottom: 15px;
+}
+
+span {
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-family: 'Roboto', sans-serif;
+}

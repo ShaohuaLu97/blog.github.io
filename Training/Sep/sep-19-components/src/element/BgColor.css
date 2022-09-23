@@ -1,0 +1,13 @@
+.dropDownBox {
+    margin: auto;
+    width: 10%;
+    border: 2px solid silver;
+    border-radius: 5px;
+}
+
+h2 {
+    background-color: lightgrey;
+    width: 300px;
+    padding: 50px;
+    margin: 20px;
+}
