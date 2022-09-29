@@ -18,14 +18,19 @@ body {
     margin: 4px auto;
     padding: 16px;
     border-radius: 5px;
-    width: 50%;
+    width: 80%;
     font-size: 20px;
     cursor: pointer;
     background-color: tan;
 }
 
+.complete {
+    text-decoration: line-through;
+    opacity: 0.4;
+}
+
 .todo-input {
-    width: auto;
+    width: 400px;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -43,4 +48,37 @@ body {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+
+.todo-date {
+    width: 150px;
+    background-color: pink;
+    color: white;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.todotextdisplay {
+    text-align: left;
+    text-transform: uppercase;
+    color: #4CAF50;
+}
+
+.tododate {
+    text-align: left;
+    color: red;
+}
+
+.todotime {
+    text-align: left;
+    color: royalblue;
+    text-indent: 5px;
+}
+
+.todotimeremain {
+    text-align: left;
+    color: #008CBA;
 }
